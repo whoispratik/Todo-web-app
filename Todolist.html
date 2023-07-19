@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/e98bcab562.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+    <!-- Create Todo Container  -->
+    <div class="container">
+      <h1>Todo List</h1>
+      <div class="alert" id="alert">alert message</div>
+      <!-- Search box  -->
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Search tasks..." />
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+      </div>
+
+      <p id="noTaskMessage" style="display: none">No tasks found.</p>
+
+      <!-- Creat todolist  -->
+      <ul id="todoList"></ul>
+      <div class="addTask">
+        <input type="text" id="taskInput" placeholder="Add new task" />
+        <button class="btn" id="addBtn">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+
+      <!--Create Modals  -->
+      <!-- Edit Modal  -->
+      <div id="editModal" class="modal">
+        <div class="modalContent">
+          <span class="closedBtn"><i class="fa-solid fa-xmark"></i></span>
+          <h2>Edit Task</h2>
+          <input type="text" id="editInput" />
+          <button class="btn btn-save" id="saveBtn">Save</button>
+        </div>
+      </div>
+      <!-- Delete Modal  -->
+      <div id="deleteModal" class="modal">
+        <div class="modalContent">
+          <span class="closedBtn"><i class="fa-solid fa-xmark"></i></span>
+          <h2>Delete Task</h2>
+          <p>Are you sure you want to delete this task?</p>
+          <button class="btn btn-delete" id="deleteBtn">Delete</button>
+        </div>
+      </div>
+    </div>
+    <script src="Todolist.js"></script>
+  </body>
+</html>
