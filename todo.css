@@ -19,8 +19,8 @@ body{
 .container{
     background: linear-gradient(90deg,yellowgreen,60%,rgb(77, 20, 124));
     border-radius: 10px;
-    box-shadow: 0 4px 2px 5px rgba(0 0 0 /0.1);
-   padding: 2rem;
+    box-shadow: 4px 4px 2px 5px rgba(0 0 0 /0.1);
+   padding:2rem;
    max-width: 500px;
    min-height: 70vh;
   width: 100%;
@@ -53,12 +53,12 @@ input{
     font-size:1.5rem;
     display: inline-block;
     margin-top:3px;
-    padding:.5rem;
+    padding:1.4rem 1rem;
     width:100%;
 }
 
 input::placeholder{
-    font-size: 1rem;
+    
     color:rgb(240,240,240);
     font-size:1.5rem;
 }
@@ -110,21 +110,22 @@ font-size:1.5rem;
 .btn{
     display: inline-block;
     width:auto;
-    height:40px;
+    height:45px;
     background:rgb(185,16,16);
     border:none;
     outline:none;
     color:#fff;
     cursor: pointer;
-    margin-top:3px;
-    margin-right:4px;
+    margin-top:1px;
+    margin-right:7px;
     font-size:.9rem;
     padding:.5rem 1rem;
  transition: background-color 0.3s ease;   
-
-
 }
 
+#addBtn{
+align-self: flex-end;
+}
 .modalContent p{
 margin-top:5px;
 }
@@ -168,6 +169,7 @@ margin-top:5px;
     }
     input{
         font-size:0.75rem;
+        padding:1rem;
     }
     input::placeholder{
         font-size:.75rem;
@@ -177,5 +179,10 @@ margin-top:5px;
     }
     .alert{
         font-size: .75rem;
+    }
+    li .btn i{
+    font-size: .5rem;
+    height: 20px;
+    margin-right: 10px;
     }
   }
